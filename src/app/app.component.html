@@ -1,0 +1,10 @@
+<input type="text" [formControl]="filter" placeholder="Filter states..." />
+
+<!-- <ul>
+  <li *ngFor="let state of filteredStates$ | async">{{ state.name }}</li>
+</ul> -->
+<div *ngFor="let state of filteredStates$ | async">
+  <input type="checkbox" id="state.name" name="state.name" value="state.name" />
+  <label for="state.name">{{ state.name }}</label
+  ><br />
+</div>
